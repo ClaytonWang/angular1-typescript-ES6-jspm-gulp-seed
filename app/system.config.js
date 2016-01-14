@@ -14,7 +14,8 @@ System.config({
   paths: {
     "npm:*": "jspm_packages/npm/*",
     "github:*": "jspm_packages/github/*",
-    "app.templates": "src/app.templates"
+    "app.templates": "src/app.templates",
+    "APIKeys": "src/APIKeys"
   },
 
   packages: {

@@ -9,10 +9,10 @@ import 'assets/styles/theme/bootstrap.css!';
 import 'assets/styles/app.css!';
 import 'assets/styles/features.css!';
 
-    // Load Angular libraries
+// Load Angular libraries
 
-    import *
-    as angular from 'angular';
+import *
+  as angular from 'angular';
 import 'angular-animate';
 import 'angular-aria';
 import 'angular-messages';
@@ -27,14 +27,14 @@ import 'angular-material';
 // Load App Angular Modules
 import './component.app/module';
 import './config.translation/translation.module';
-// import './provider.device/device.module';
+import './provider.device/device.module';
 import './config.analytics/analytics.module';
 
 /**
  * Manually bootstrap the application when AngularJS and
  * the application classes have been loaded.
  */
-angular.element(document).ready(function() {
+angular.element(document).ready(function () {
 
   let body: Element = <HTMLElement>document.getElementsByTagName('body')[0];
 
@@ -52,7 +52,7 @@ angular.element(document).ready(function() {
     // App Modules
     'app.templates',
     'app.translation',
-    // 'app.analytics',
+    'app.analytics',
     'app.component'
   ]);
 
