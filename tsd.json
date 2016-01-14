@@ -1,0 +1,36 @@
+{
+  "version": "v4",
+  "repo": "borisyankov/DefinitelyTyped",
+  "ref": "master",
+  "path": "typings",
+  "bundle": "typings/tsd.d.ts",
+  "installed": {
+    "angularjs/angular.d.ts": {
+      "commit": "419793fb796b0e5c1ed11e018ad28475de0c3735"
+    },
+    "jquery/jquery.d.ts": {
+      "commit": "419793fb796b0e5c1ed11e018ad28475de0c3735"
+    },
+    "angular-ui-router/angular-ui-router.d.ts": {
+      "commit": "40c60850ad6c8175a62d5ab48c4e016ea5b3dffe"
+    },
+    "jasmine/jasmine.d.ts": {
+      "commit": "40c60850ad6c8175a62d5ab48c4e016ea5b3dffe"
+    },
+    "bootstrap/bootstrap.d.ts": {
+      "commit": "40c60850ad6c8175a62d5ab48c4e016ea5b3dffe"
+    },
+    "angularjs/angular-animate.d.ts": {
+      "commit": "dc9dabe74a5be62613b17a3605309783a12ff28a"
+    },
+    "angulartics/angulartics.d.ts": {
+      "commit": "419793fb796b0e5c1ed11e018ad28475de0c3735"
+    },
+    "selenium-webdriver/selenium-webdriver.d.ts": {
+      "commit": "faa49cc68025118355b677b936892435b9be7247"
+    },
+    "angular-protractor/angular-protractor.d.ts": {
+      "commit": "faa49cc68025118355b677b936892435b9be7247"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.view{
+  align-content: center;
+}
+
+.bookRead{
+  text-decoration: line-through;
+  font-style: italic;
+}
+
+.input-group{
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.ng-invalid.ng-touched{
+  border-color:red;
+}
+
+.error-messages{
+  color: red;
+}
