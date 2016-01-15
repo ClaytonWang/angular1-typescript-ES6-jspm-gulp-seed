@@ -43,6 +43,7 @@ System.config({
     "angulartics-google-analytics": "npm:angulartics-google-analytics@0.1.3",
     "clean-css": "npm:clean-css@3.4.8",
     "css": "github:systemjs/plugin-css@0.1.20",
+    "greensock": "github:greensock/GreenSock-JS@1.18.2",
     "json": "github:systemjs/plugin-json@0.1.0",
     "normalize.css": "github:necolas/normalize.css@3.0.3",
     "text": "github:systemjs/plugin-text@0.0.4",

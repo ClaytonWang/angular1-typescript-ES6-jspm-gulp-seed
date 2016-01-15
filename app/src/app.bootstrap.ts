@@ -21,14 +21,16 @@ import 'angular-ui-router';
 import 'angular-cookies';
 import 'angular-sanitize';
 import 'angular-material';
-
+import 'greensock';
 // Third party modules
 
 // Load App Angular Modules
 import './component.app/module';
-import './config.translation/translation.module';
-import './provider.device/device.module';
-import './config.analytics/analytics.module';
+import './config.translation/module';
+import './provider.device/module';
+import './config.analytics/module';
+import './animation.gsap/module';
+import './factory.position/module';
 
 /**
  * Manually bootstrap the application when AngularJS and
@@ -53,7 +55,9 @@ angular.element(document).ready(function () {
     'app.templates',
     'app.translation',
     'app.analytics',
-    'app.component'
+    'app.component',
+    'app.animation.gsap',
+    'app.position.factory'
   ]);
 
   angular.bootstrap(body, ['app'], {strictDi: false});
