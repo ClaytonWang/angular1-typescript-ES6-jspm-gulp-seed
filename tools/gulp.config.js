@@ -1,3 +1,5 @@
+var systemConfig = require('./getSystemConfig');
+
 var app = 'app';
 var src = 'app/src';
 var srcAssets = 'app/assets';
@@ -9,8 +11,7 @@ var build = 'build';
 var coverage = 'build/coverage';
 var production = 'build/production';
 var productionAssets = 'build/production/styles';
-var gsapVersion = '1.18.2';
-var gsapPath = app + '/jspm_packages/github/greensock/GreenSock-JS@' + gsapVersion + '/';
+var gsapPath = app + systemConfig.getPath('greensock');
 
 var gsap = {
   easing: {
