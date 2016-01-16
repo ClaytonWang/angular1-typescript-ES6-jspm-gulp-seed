@@ -32,7 +32,7 @@ module.exports = function(config) {
     files: [
       'app/jspm_packages/github/angular/bower-angular@1.4.8/angular.js',
       'app/jspm_packages/github/angular/bower-angular-mocks@1.4.8/angular-mocks.js',
-      'app/src/**/!(index)*.js',
+      'app/src/**/!(module | template)*.js',
 
       // paths to support debugging with source maps in dev tools
       {pattern: 'app/src/**/*.ts', included: false, watched: false},
@@ -40,7 +40,7 @@ module.exports = function(config) {
     ],
 
     preprocessors: {
-      'app/src/**/!(*.test)+(.js)': ['coverage']
+      'app/src/**/!(*.test | *.template)+(.js)': ['coverage']
     },
 
     coverageReporter: {

@@ -3,7 +3,7 @@
 import 'greensock';
 import {GsapProvider} from './gsap.config';
 
-function ngViewGsap () {
+function ngViewGsap (uixPosition, gsap) {
   'use strict';
 
   let settings = new GsapProvider();
@@ -13,14 +13,14 @@ function ngViewGsap () {
 
   return {
     enter: function(element, parentElement, afterElement, done) {
-      TweenMax.set
+      gsap.TweenMax.set
       (
         element, {
           display: 'none',
           opacity: setup.opacity
         });
 
-      TweenMax.to(
+      gsap.TweenMax.to(
         element,
         enterSettings.time.transition,
         {
@@ -34,7 +34,7 @@ function ngViewGsap () {
     leave: function(element, done) {
 
       function onComplete() {
-        TweenMax.to(
+        gsap.TweenMax.to(
           element,
           0,
           {
@@ -43,7 +43,7 @@ function ngViewGsap () {
           });
       }
 
-      TweenMax.to(
+      gsap.TweenMax.to(
         element,
         leaveSettings.time.transition,
         {

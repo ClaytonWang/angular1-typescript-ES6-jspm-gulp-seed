@@ -9,6 +9,37 @@ var build = 'build';
 var coverage = 'build/coverage';
 var production = 'build/production';
 var productionAssets = 'build/production/styles';
+var gsapVersion = '1.18.2';
+var gsapPath = app + '/jspm_packages/github/greensock/GreenSock-JS@' + gsapVersion + '/';
+
+var gsap = {
+  easing: {
+    EasePack: gsapPath + 'easing/EasePack.js'
+  },
+  plugins: {
+    AttrPlugin: gsapPath + 'plugins/AttrPlugin.js',
+    BezierPlugin: gsapPath + 'plugins/BezierPlugin.js',
+    ColorPropsPlugin: gsapPath + 'plugins/ColorPropsPlugin.js',
+    CSSPlugin: gsapPath + 'plugins/CSSPlugin.js',
+    CSSRulePlugin: gsapPath + 'plugins/CSSRulePlugin.js',
+    DirectionalRotationPlugin: gsapPath + 'plugins/DirectionalRotationPlugin.js',
+    EaselPlugin: gsapPath + 'plugins/EaselPlugin.js',
+    EndArrayPlugin: gsapPath + 'plugins/EndArrayPlugin.js',
+    KineticPlugin: gsapPath + 'plugins/KineticPlugin.js',
+    RaphaelPlugin: gsapPath + 'plugins/RaphaelPlugin.js',
+    RoundPropsPlugin: gsapPath + 'plugins/RoundPropsPlugin.js',
+    ScrollToPlugin: gsapPath + 'plugins/ScrollToPlugin.js',
+    TextPlugin: gsapPath + 'plugins/TextPlugin.js'
+  },
+  utils: {
+    Draggable: gsapPath + 'utils/Draggable.js'
+  },
+  jquery: gsapPath + 'jquery.gsap.js',
+  TimelineLite: gsapPath + 'TimelineLite.js',
+  TimelineMax: gsapPath + 'TimelineMax.js',
+  TweenLite: gsapPath + 'TweenLite.js',
+  TweenMax: gsapPath + 'TweenMax.js'
+};
 
 module.exports = {
   expressServer: {
@@ -99,6 +130,18 @@ module.exports = {
       source: app + '/index.html',
       dest: production
     }
+  },
+
+  gsap: {
+    dest: src + '/animation.gsap/',
+    fileName: 'gsap.factory.ts',
+    template: src + '/animation.gsap/templates/gsap.factory.template.ts',
+    inject: [
+      gsap.TweenMax,
+      gsap.TimelineMax,
+      gsap.plugins.CSSPlugin,
+      gsap.plugins.CSSRulePlugin
+    ]
   },
 
   translate: {

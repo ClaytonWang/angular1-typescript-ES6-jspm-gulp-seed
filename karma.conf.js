@@ -26,7 +26,7 @@ module.exports = function(config) {
         transpiler: 'typescript'
       },
       serveFiles: [
-        'app/**/!(test)*.ts'
+        'app/**/!(test | template)*.ts'
       ]
     },
 

@@ -22,6 +22,8 @@ module.exports.loadTasks = function(gulp, plugins, config) {
   gulp.task('sass.app', task('sass.app'));
   gulp.task('sass.features', task('sass.features'));
 
+  gulp.task('inject.gsap', task('inject.gsap'));
+
   gulp.task('sass', function(done) {
     runSequence(
       [

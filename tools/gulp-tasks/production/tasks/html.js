@@ -1,6 +1,7 @@
 module.exports = function(gulp, plugins, config) {
   'use strict';
 
+  // index.html
   config = config.html.production;
 
   return function(done) {
