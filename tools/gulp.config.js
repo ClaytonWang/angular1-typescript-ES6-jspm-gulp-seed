@@ -124,8 +124,8 @@ module.exports = {
 
   html: {
     development: {
-      source: app + '/**/*.html',
-      dest: app + '/src'
+      source: src + '/**/*.html',
+      dest: src
     },
     production: {
       source: app + '/index.html',
