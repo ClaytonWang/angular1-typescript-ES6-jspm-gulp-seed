@@ -21,6 +21,7 @@ import 'angular-ui-router';
 import 'angular-cookies';
 import 'angular-sanitize';
 import 'angular-material';
+import 'greensock';
 // Third party modules
 
 // Load App Angular Modules

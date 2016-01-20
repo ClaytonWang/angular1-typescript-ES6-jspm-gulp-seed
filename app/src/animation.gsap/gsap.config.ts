@@ -1,6 +1,6 @@
 'use strict';
 
-class GsapProvider {
+class GsapConfig {
 
   public transition: number = 0.25;
   public ease: string = 'Power2';
@@ -35,6 +35,10 @@ class GsapProvider {
       }
     }
   };
+
+  static factgory() {
+    return new GsapConfig();
+  }
 }
 
-export {GsapProvider};
+export {GsapConfig};
