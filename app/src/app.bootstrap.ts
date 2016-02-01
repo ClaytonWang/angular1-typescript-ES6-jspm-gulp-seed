@@ -5,7 +5,7 @@
 
 // Contains Roboto font required by angular material
 import 'assets/styles/fonts.css!';
-import 'assets/styles/theme/bootstrap.css!';
+import 'angular-material/angular-material.css!';
 import 'assets/styles/app.css!';
 import 'assets/styles/features.css!';
 
